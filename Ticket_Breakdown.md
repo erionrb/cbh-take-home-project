@@ -16,3 +16,26 @@ Based on the information given, break this ticket down into 2-5 individual ticke
 You will be graded on the level of detail in each ticket, the clarity of the execution plan within and between tickets, and the intelligibility of your language. You don't need to be a native English speaker, but please proof-read your work.
 
 ## Your Breakdown Here
+
+Estimation Effort
+1, 2, 3 ,5 ,8, 13
+From 8 - 13 maybe could ne break it down to more tickets to reduce complexity
+
+Ticket-1
+name: Custom id relationship table
+description:
+    A table named custom_agent_id should be created with the following columns:
+    custom_id varchar[256]
+    agent_id  varchar[256]
+    The columns should ne a composed primary key and the agent_id should be a foreing key to internal table id
+OBS: Please take a look ate the tables and figure out wich one is the agent_id related one.
+Effort - 3
+
+Ticket-2
+name: Refactoring report search on agents
+description:
+    Look in the code for functions that make use of legacy angent id and refactore it to accomodate the new table custom_agent_id.
+    For any agent_id that does not has a equivalent custom_id return appropriate error when custom id has been requested by user.
+    Also enable user to generate the report using the new custom_id when available.
+    Make sure that the functions `getShiftsByFacility` and `generateReport` are also covered.
+Effort - 5

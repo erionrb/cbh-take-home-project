@@ -10,11 +10,11 @@ You will be graded on the exhaustiveness and quality of your unit tests, the dep
 
 ## Your Explanation Here
 
-We cam simple prevent unecessary processing by returning the TRIVIAL_PARTITION_KEY when no paramater has been sent:
+We can simple prevent unecessary processing by returning the TRIVIAL_PARTITION_KEY when no paramater has been sent:
 
 <pre>
 if (!event) return TRIVIAL_PARTITION_KEY;
-</pree>
+</pre>
 
 Candidate can them receive directly the value corresponding to the event logic, that is separeted into appropriated function:
 
